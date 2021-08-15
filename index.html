@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Dynamic Authentication Form </title>
     <link rel="stylesheet" href="./authenticated.css">
     <link rel="stylesheet" href="./pages.css">
 </head>
@@ -17,6 +17,8 @@
                 <form action="" method="post">
                     <label for="email">Email</label>
                     <input type="email" id="email" required placeholder="email">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required placeholder="Username">
                     <label for="password">Password</label>
                     <input type="password" name="password2" required id="password" placeholder="password">
                     <label for="password2">Password again</label>
@@ -36,13 +38,14 @@
             </div>
             <h1>Log In</h1>
             <form action="" method="post">
-                <label for="emailogin">email</label>
-                <input type="email" name="passw" id="emailogin">
+                <label for="emailogin">Username</label>
+                <input type="text" name="passw" id="emailogin">
                 <label for="passwordlogin">password</label>
                 <input type="password" id="passwordlogin">
-                <button class="loginbtn"> login </button>
+                <button class="loginbtn" type="submit" > login </button>
             </form>
             <div class="waiting-time"></div>
+            <div class="timer"></div>
         </div>
     </div>
     <div class="pages none">
