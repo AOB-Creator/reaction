@@ -26,6 +26,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .waves{
@@ -86,8 +88,9 @@
 @media screen and (max-width: 600px) {
     .loginbtn{
         width: 100%;
+        
         padding: 10px 20px;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     
@@ -124,12 +127,14 @@
 /* sign up *//* sign up *//* sign up *//* sign up *//* sign up *//* sign up */
 
 .sign-up{
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--fnt);
     background-color:aliceblue;
+    
 }
 .center-sign-up{
     width: 30%;
@@ -170,4 +175,26 @@
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .sign-up{
+        overflow: hidden !important;
+        height: 100vh !important;
+    }
+    .waves{
+        position: absolute;
+        height: 30%;
+        top: 0;
+        z-index: 0;
+    }
+    .center-sign-up{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 10px;
+        background: transparent;
+        z-index: 3;
+    }
 }
